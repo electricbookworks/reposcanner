@@ -1,0 +1,218 @@
+/*
+Theme Name: Repo Scanner
+Theme URI: http://dev2.electricbookworks.com
+Author: Arthur Attwell
+Author URI: http://arthurattwell.com/
+Description: For when you need to scan of find content from a lot of content quickly, like a team wiki.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: repo, cms
+Text Domain: reposcanner
+*/
+
+/* General structure */
+
+body {
+	font-family: "Arial Narrow", "Helvetica CY", "Oswald", sans-serif;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+	color: #393939;
+	background-color: #f2f2f2;
+	overflow-y: scroll;
+}
+#wrapper {}
+#header {
+	padding: 0.5em;
+	background-color: white;
+	border-bottom: 1px solid gainsboro;
+	min-height: 2em;
+	position: fixed;
+	width: 100%;
+}
+@media only screen 
+	and (max-width: 600px), (max-height: 600px) { /* Let nav-bar scroll out of view on small screens */
+	#header {
+		position: relative;
+	}
+}
+div.search {
+	display: inline-block;
+	width: 50%;
+	padding: 0;
+}
+div.navigation {
+	width: 20%;
+	padding: 0.5em 0;
+	float: right;
+	text-align: right;
+	right: 10em;
+	position: relative;
+}
+div.branding {
+	display: inline-block;
+	margin-right: 2em;
+	padding: 0.5em;
+	right: 0.5em;
+	position: absolute;
+}
+div.sidebar {
+	float: right;
+	position: absolute;
+	right: 0;
+	padding: 0 0.5em;
+}
+div.content {
+	padding: 3.3em 0.5em 0.5em 0.5em;
+}
+div.single {
+	max-width: 960px;
+	margin: auto;
+	padding: 1em;
+	font-size: 1.3em;
+	line-height: 150%;
+	border-left: 1px solid gainsboro;
+}
+div#footer {
+	clear: both;
+}
+
+/* Navigation */
+
+div.navigation ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+div.navigation li a {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Typography */
+
+h1, h2  {
+	font-size: 1.2em;
+	margin: 0 1em 1em 0;
+}
+h3, h4, h5, h6 {
+	font-size: 1em;
+	margin: 0 1em 1em 0;
+}
+input {
+	font-family: inherit;
+	background: initial;
+}
+ul, ol {
+	padding: 1.2em;
+}
+a {
+	color: inherit;
+}
+
+/* Specific features */
+
+.branding h1 {
+	font-size: 1em;
+	font-weight: bold;
+}
+.branding a {
+	text-decoration: none;
+	color: inherit;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	text-align: right;
+}
+
+.search input {
+	border: 0;
+	width: 99%;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	height: 2em;
+	padding: 0.5em;
+}
+
+a.post-title {
+	font-size: initial;
+	text-decoration: none;
+	color: #8b8ed4;
+}
+a.post-edit-link {
+	text-decoration: none;
+	float: right;
+}
+
+#archive .post { 
+	float: left;
+	display: inline-block; 
+	margin: 0; 
+	padding: 0.5em; 
+	max-width: 100%;
+	height: 15em;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border-right: 1px solid gainsboro;
+	border-bottom: 1px solid gainsboro;
+	box-sizing: border-box;
+}
+
+/* Resize widths to make the most of screen widths, less common scroll bar width */
+@media only screen and (max-width: 1920px) {
+	#archive .post { 
+		width: calc((1920px - 17px) / 9);
+	}
+}
+@media only screen and (max-width: 1600px) {
+	#archive .post { 
+		width: calc((1600px - 17px) / 8);
+	}
+}
+@media only screen and (max-width: 1366px) {
+	#archive .post { 
+		width: calc((1366px - 17px) / 7);
+	}
+}
+@media only screen and (max-width: 1280px) {
+	#archive .post { 
+		width: calc((1280px - 17px) / 6);
+	}
+}
+@media only screen and (max-width: 1024px) {
+	#archive .post { 
+		width: calc((1024px - 17px) / 5);
+	}
+}
+@media only screen and (max-width: 800px) {
+	#archive .post { 
+		width: calc((800px - 17px) / 4);
+	}
+}
+@media only screen and (max-width: 768px) {
+	#archive .post { 
+		width: calc((768px - 17px) / 4);
+	}
+}
+@media only screen and (max-width: 720px) {
+	#archive .post { 
+		width: calc((720px - 17px) / 3);
+	}
+}
+@media only screen and (max-width: 480px) {
+	#archive .post { 
+		width: calc((480px - 17px) / 2);
+	}
+}
+@media only screen and (max-width: 360px) {
+	#archive .post { 
+		width: calc((360px - 17px) / 1);
+	}
+}
+@media only screen and (max-width: 320px) {
+	#archive .post { 
+		width: calc((320px - 17px) / 1);
+	}
+}
