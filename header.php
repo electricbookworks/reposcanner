@@ -11,7 +11,7 @@ xmlns:fb="http://ogp.me/ns/fb#"
 >
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<title><?php wp_title('—', true, right); ?></title>
+	<title><?php wp_title('|', true, right); ?></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
