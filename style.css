@@ -1,6 +1,6 @@
 /*
 Theme Name: Repo Scanner
-Theme URI: http://dev2.electricbookworks.com
+Theme URI: https://github.com/electricbookworks/reposcanner
 Author: Arthur Attwell
 Author URI: http://arthurattwell.com/
 Description: For when you need to scan of find content from a lot of content quickly, like a team wiki.
@@ -91,6 +91,9 @@ div.navigation li a {
 	text-decoration: none;
 	color: inherit;
 }
+div.menu {
+	float: left;
+}
 
 /* Typography */
 
@@ -170,6 +173,13 @@ a.post-edit-link {
 	box-sizing: border-box;
 	box-shadow: 0 10px 10px 15px white;
 	border: 1px solid #f2f2f2;
+}
+
+.sidebar ul, .sidebar ol {
+	padding: 0;
+}
+.sidebar li {
+	list-style-type: none;
 }
 
 /* Resize widths to make the most of screen widths, less common scroll bar width */
