@@ -8,6 +8,10 @@
 			<?php the_title( '<h2 class="post-title">', '</h2>' )?>
 		</a>
 
+		<div class="tags">
+			<?php the_tags( 'Tags: ', ', ', '<br />' ); ?>
+		</div><!--.tags-->
+		
 		<?php the_content(); ?>
 
 	</div><!--.<?php post_class(); ?>-->
