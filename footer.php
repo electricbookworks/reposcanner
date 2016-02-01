@@ -8,7 +8,6 @@
         </div><!--.content-->
 
         <div id="footer">
-			<?php dynamic_sidebar( footer ); ?> 
         </div><!--#footer -->
 
 	</div><!--#wrapper-->
