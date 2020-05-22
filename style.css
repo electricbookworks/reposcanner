@@ -12,7 +12,6 @@ Text Domain: reposcanner
 */
 
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
-
 /* General structure */
 
 body {
@@ -23,7 +22,9 @@ body {
 	color: #393939;
 	overflow-y: scroll;
 }
+
 #wrapper {}
+
 #header {
 	padding: 0.5em;
 	background-color: white;
@@ -34,17 +35,20 @@ body {
 	z-index: 1;
 	opacity: 0.9;
 }
-@media only screen 
-	and (max-width: 600px), (max-height: 600px) { /* Let nav-bar scroll out of view on small screens */
+
+@media only screen and (max-width: 600px), (max-height: 600px) {
+	/* Let nav-bar scroll out of view on small screens */
 	#header {
 		position: relative;
 	}
 }
+
 div.search {
 	display: inline-block;
 	width: 50%;
 	padding: 0;
 }
+
 div.navigation {
 	width: 20%;
 	padding: 0.5em 0;
@@ -53,6 +57,7 @@ div.navigation {
 	right: 10em;
 	position: relative;
 }
+
 div.branding {
 	display: inline-block;
 	margin-right: 2em;
@@ -60,6 +65,7 @@ div.branding {
 	right: 0.5em;
 	position: absolute;
 }
+
 div.sidebar {
 	float: right;
 	position: absolute;
@@ -67,9 +73,11 @@ div.sidebar {
 	padding: 0 0.5em;
 	background-color: white;
 }
+
 div.content {
 	padding: 3.3em 0.5em 0.5em 0.5em;
 }
+
 div.single {
 	max-width: 960px;
 	margin: auto;
@@ -77,6 +85,7 @@ div.single {
 	font-size: 1.3em;
 	line-height: 150%;
 }
+
 div#footer {
 	clear: both;
 }
@@ -88,15 +97,18 @@ div.navigation ul {
 	margin: 0;
 	padding: 0;
 }
+
 div.navigation li a {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	text-decoration: none;
 	color: inherit;
 }
+
 div.menu {
 	float: left;
 }
+
 .pagination {
 	position: fixed;
 	bottom: 0;
@@ -111,6 +123,7 @@ div.menu {
 	left: 0;
 	text-align: center;
 }
+
 #after-content {
 	clear: both;
 	margin-bottom: 3em;
@@ -118,25 +131,30 @@ div.menu {
 
 /* Typography */
 
-h1, h2  {
+h1, h2 {
 	font-size: 1.2em;
 	margin: 1em 1em 1em 0;
 	color: #222222;
 }
-	#archive h1, #archive h2  {
-		font-size: 0.8em;
-	}
+
+#archive h1, #archive h2 {
+	font-size: 0.8em;
+}
+
 h3, h4, h5, h6 {
 	font-size: 1em;
 	margin: 0 1em 1em 0;
 }
+
 input {
 	font-family: inherit;
 	background: initial;
 }
+
 ul, ol {
 	padding: 1.2em;
 }
+
 a {
 	color: inherit;
 }
@@ -147,6 +165,7 @@ a {
 	max-width: 100%;
 	object-fit: scale-down;
 }
+
 /* Specific features */
 
 .branding h1 {
@@ -154,6 +173,7 @@ a {
 	font-weight: bold;
 	margin: 0;
 }
+
 .branding a {
 	text-decoration: none;
 	color: inherit;
@@ -176,6 +196,7 @@ a.post-title {
 	text-decoration: none;
 	color: #8b8ed4;
 }
+
 a.post-edit-link {
 	text-decoration: none;
 	float: right;
@@ -183,15 +204,15 @@ a.post-edit-link {
 }
 
 .tags {
-    font-size: 0.7em;
-    text-transform: uppercase;
+	font-size: 0.7em;
+	text-transform: uppercase;
 }
 
-#archive .post { 
+#archive .post {
 	float: left;
-	display: inline-block; 
-	margin: 0; 
-	padding: 1em; 
+	display: inline-block;
+	margin: 0;
+	padding: 1em;
 	max-width: 100%;
 	height: 15em;
 	overflow-y: hidden;
@@ -204,63 +225,79 @@ a.post-edit-link {
 .sidebar ul, .sidebar ol {
 	padding: 0;
 }
+
 .sidebar li {
 	list-style-type: none;
 }
 
 /* Resize widths to make the most of screen widths, less common scroll bar width */
+
+#archive .post {
+	width: 200px;
+}
+
 @media only screen and (max-width: 1920px) {
-	#archive .post { 
+	#archive .post {
 		width: calc((1920px - 17px) / 9);
 	}
 }
+
 @media only screen and (max-width: 1600px) {
-	#archive .post { 
+	#archive .post {
 		width: calc((1600px - 17px) / 8);
 	}
 }
+
 @media only screen and (max-width: 1366px) {
-	#archive .post { 
+	#archive .post {
 		width: calc((1366px - 17px) / 7);
 	}
 }
+
 @media only screen and (max-width: 1280px) {
-	#archive .post { 
+	#archive .post {
 		width: calc((1280px - 17px) / 6);
 	}
 }
+
 @media only screen and (max-width: 1024px) {
-	#archive .post { 
+	#archive .post {
 		width: calc((1024px - 17px) / 5);
 	}
 }
+
 @media only screen and (max-width: 800px) {
-	#archive .post { 
+	#archive .post {
 		width: calc((800px - 17px) / 4);
 	}
 }
+
 @media only screen and (max-width: 768px) {
-	#archive .post { 
+	#archive .post {
 		width: calc((768px - 17px) / 4);
 	}
 }
+
 @media only screen and (max-width: 720px) {
-	#archive .post { 
+	#archive .post {
 		width: calc((720px - 17px) / 3);
 	}
 }
+
 @media only screen and (max-width: 480px) {
-	#archive .post { 
+	#archive .post {
 		width: calc((480px - 17px) / 2);
 	}
 }
+
 @media only screen and (max-width: 360px) {
-	#archive .post { 
+	#archive .post {
 		width: calc((360px - 17px) / 1);
 	}
 }
+
 @media only screen and (max-width: 320px) {
-	#archive .post { 
+	#archive .post {
 		width: calc((320px - 17px) / 1);
 	}
 }
